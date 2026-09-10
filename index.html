@@ -12,7 +12,7 @@
     <div class="site-container">
         <div class="hero">
             <div class="hero-bg">
-                <img src="./imgs/Lightning-background.jpg" class="hero-bg-img">
+                <img src="./imgs/Lightning-background.jpg" class="hero-bg-img" alt="">
                 <div class="hero-logo">
                     <img src="./imgs/Lightning-icon.png" class="company-logo">
                     <h1 class="company-title">Volt</h1>
@@ -44,11 +44,53 @@
 
             <div class="sign-up-form-container">
 
+                <form method="post" action="" id="sign-up-form">
+                    
+                    <h1 class="form-title">Let's do this!</h1>
+
+                    <div class="form-row">
+                        <p class="input-container">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </p>
+
+                        <p class="input-container">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </p>
+                    </div>
+
+                    <div class="form-row">
+                        <p class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </p>
+
+                        <p class="input-container">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </p>                
+                    </div>
+                    
+                    <div class="form-row">
+                        <p class="input-container">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
+                        </p>
+
+                        <p class="input-container">
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
+                        </p>                
+                    </div>
+                </form>
+
             </div>
 
             <div class="sign-up-end-container">
-
+                
             </div>
+
         </div>
     </div>
 

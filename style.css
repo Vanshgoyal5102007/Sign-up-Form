@@ -13,7 +13,8 @@
 }
 
 *:focus-visible {
-    outline: 2px solid blue;
+    outline: 1px solid blue;
+    box-shadow: 2.5px 2.5px 5px rgb(170, 170, 170);
 }
 
 body{
@@ -23,6 +24,7 @@ body{
 
 .site-container {
     display: flex;
+    height: 100vh;
 }
 
 .hero{
@@ -31,30 +33,36 @@ body{
 }
 
 .hero-bg{
-    height: 100vh;
-    background-color: white;
     position: relative;
-    box-shadow: 2px 0 3px rgb(109, 109, 109);
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 3px rgb(110, 110, 110);
 }
 
 .hero-bg-img {
     display: block;
+
     height: 100%;
     width: 100%;
+
     object-fit: cover;
 }
 
 .hero-logo {
     display: flex;
     gap: 2vw;
-    background-color: rgba(50, 32, 53, 0.85);
-    padding: 1vh;
+    
     justify-content: center;
     align-items: center;
+
     position: absolute;
     top: 30vh;
+    
+    padding: 1vh;
     width: 100%;
-    height: clamp(100px, calc(10vh + 5vw), 220px);
+    height: clamp(100px, 15vw, 220px);
+
+    background-color: rgba(50, 32, 53, 0.85);
 }
 
 .company-logo {
@@ -64,7 +72,8 @@ body{
 
 .company-title{
     font-family: "BluuNext", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(1rem, 1vh + 11vw, 6rem);
+    font-size: clamp(1rem, 8vw, 6rem);
+
     color: rgb(136, 0, 255);
     text-shadow: -2px 0px 2px black;
 }
@@ -72,9 +81,10 @@ body{
 .background-credits {
     position: absolute;
     bottom: 20px;
-    color: white;
+    
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .background-credits a{
@@ -83,15 +93,19 @@ body{
 
 .sign-up-container {
     flex: 2;
+
     display: flex;
     flex-direction: column;
+
+    overflow: scroll;
     background-color: white;
 }
 
 .sign-up-title-container {
+    flex: 1;
+
     background-color: rgb(241, 241, 241);
-    height: 40vh;
-    padding: calc(2vw + 2vh);
+    padding: 4vw;
 }
 
 .sign-up-title-text {
@@ -99,18 +113,80 @@ body{
     flex-direction: column;
     gap: 5vh;
     justify-content: end;
+
     height: 100%;
     max-inline-size: 55ch;
+
     font-size: 2.5vh;
     font-weight: 600;
 }
 
 .sign-up-form-container {
-    height: 20vh;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+
+    box-shadow: 0px 3px 5px rgb(207, 207, 207);
+    z-index: 1;
+
+    padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-title {
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    flex-flow: wrap;
+    gap: 5vw;
+}
+
+.input-container {
+    flex: 1;
+
+    min-width: 25px;
+    max-width: 20vw;
+}
+
+.input-container label{
+    display: block;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+    font-size: clamp(0.4rem, 3vw, 0.75rem);
+
+    margin-bottom: 2%;
+    color: rgb(50, 50, 50);
+}
+
+.input-container input {
+    display: flex;
+    padding: 7.5px 10px;
+
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 3px;
+
+    font-size: 1em;
+    width: 100%;
+}
+
+.input-container input:user-invalid {
+    border: 1px solid red;
 }
 
 .sign-up-end-container {
-    height: 40vh;
+    flex: 1;
     background-color: rgb(241, 241, 241);
 }
 
@@ -118,9 +194,10 @@ body{
     padding: 16px;
     text-align: center;
     width: 100vw;
-
+    
     background-color: rgb(136, 0, 255);
     color: white;
+
     font-weight: 600;
     letter-spacing: 0.5vw;
 }
