@@ -84,8 +84,10 @@ body {
     bottom: 20px;
 
     width: 100%;
-    text-align: center;
     color: white;
+
+    font-size: clamp(0.4rem, 3vw, 1rem);
+    text-align: center;
 }
 
 .background-credits a {
