@@ -168,7 +168,7 @@ body {
 
     font-weight: 600;
     font-size: clamp(0.4rem, 3vw, 0.75rem);
-
+    
     margin-bottom: 2%;
     color: rgb(50, 50, 50);
 }
@@ -176,11 +176,12 @@ body {
 .input-container input {
     display: flex;
     padding: 7.5px 10px;
-
+    
     border: 1px solid rgb(211, 211, 211);
     border-radius: 3px;
-
+    
     font-size: 1em;
+    font-size: clamp(0.4rem, 3vw, 1rem);
     width: 100%;
 }
 
