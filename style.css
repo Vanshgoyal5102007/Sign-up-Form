@@ -201,13 +201,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
 
-    min-width: 64px;
-    max-width: 30%;
-    max-height: 50px;
+    min-width: fit-content;
 
-    padding: 2%;
+    padding: 1.5% 3%;
+    width: 30%;
+
     margin-bottom: 3vw;
 
     background-color: rgb(136, 0, 255);
@@ -225,6 +224,7 @@ body {
 .log-in-link {
     color: rgb(136, 0, 255);
     text-decoration: none;
+
     font-weight: 600;
 }
 
