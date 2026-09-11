@@ -45,7 +45,7 @@
             <div class="sign-up-form-container">
 
                 <form method="post" action="" id="sign-up-form">
-                    
+
                     <h1 class="form-title">Let's do this!</h1>
 
                     <div class="form-row">
@@ -69,26 +69,34 @@
                         <p class="input-container">
                             <label for="phone-number">PHONE NUMBER</label>
                             <input type="tel" id="phone-number" name="phone-number">
-                        </p>                
+                        </p>
                     </div>
-                    
+
                     <div class="form-row">
                         <p class="input-container">
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" id="pwd" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
+                            <input type="password" id="pwd" name="password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
                         </p>
 
                         <p class="input-container">
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-pwd" name="confirm-pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
-                        </p>                
+                            <input type="password" id="confirm-pwd" name="confirm-pwd"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d#%+_]{8,}$" required>
+                        </p>
                     </div>
                 </form>
 
             </div>
 
             <div class="sign-up-end-container">
-                
+                <button class="sign-up-form-btn" type="submit">Create Account</button>
+
+                <p class="log-in-redirect">Already have an account?
+                    <a href="" class="log-in-link" target="_blank" rel="noopener noreferrer">
+                        Log in
+                    </a>
+                </p>
             </div>
 
         </div>

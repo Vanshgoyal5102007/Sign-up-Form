@@ -134,7 +134,7 @@ body {
     box-shadow: 0px 3px 5px rgb(207, 207, 207);
     z-index: 1;
 
-    padding: clamp(1rem, 3vw, 2.5rem);
+    padding: 4vw;
 }
 
 #sign-up-form {
@@ -190,7 +190,42 @@ body {
 
 .sign-up-end-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2vw 3.5vw;
     background-color: rgb(241, 241, 241);
+}
+
+.sign-up-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    min-width: 64px;
+    max-width: 30%;
+    max-height: 50px;
+
+    padding: 2%;
+    margin-bottom: 3vw;
+
+    background-color: rgb(136, 0, 255);
+    color: white;
+    box-shadow: 2.5px 2.5px 5px rgb(170, 170, 170);
+
+    font-size: 2vh;
+    font-weight: 600;
+
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.log-in-link {
+    color: rgb(136, 0, 255);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .footer {
